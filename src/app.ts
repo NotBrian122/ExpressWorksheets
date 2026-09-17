@@ -1,6 +1,6 @@
 import express, {Application, Request, Response} from "express" ; 
 // Load the route module at runtime so TypeScript does not include a file outside src in the compilation.
-const carRoutes = require('../routes/cars');
+const carRoutes = require('../routes/cars').default;
 
 const PORT = process.env.PORT || 3000; 
 
